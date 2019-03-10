@@ -1,0 +1,568 @@
+<tw-storydata name="Thrall" startnode="34" creator="Twine" creator-version="2.2.1" ifid="D9BFB6E5-5C06-4A04-8DDF-DD3DA6971A17" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">. dragon { background-color: yellow; color: red; font-size: 200%}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="245,30" size="100,100">I am but a lowly &lt;em&gt;[[thrall]]&lt;/em&gt;.
+
+Stop a while and I will tell you many stories...
+
+I ask only for a small morsel of food.
+
+[[Will you listen to my story?]]
+
+
+&lt;&lt;cacheaudio &quot;spitonyou&quot; &quot;audio/human_hack_and_spit.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dogs&quot; &quot;audio/dogs.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;river&quot; &quot;audio/creek_forest.mp3&quot;&gt;&gt;
+&lt;&lt;set $ignore to 0&gt;&gt;
+&lt;&lt;set $toldhimtostop to 0&gt;&gt;
+&lt;&lt;set $ranhard to 0&gt;&gt;
+&lt;&lt;set $goblet is false&gt;&gt;
+&lt;&lt;set $port is false&gt;&gt;
+&lt;&lt;set $tattoo is false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Will you listen to my story?" tags="" position="775,308" size="100,100">I have many stories to tell you.  
+
+First please just a little something to eat or drink? 
+
+[[Will you give me something?]] Don&#39;t [[ignore me]]!</tw-passagedata><tw-passagedata pid="3" name="Will you give me something?" tags="" position="665,458" size="100,100">Thank you.  
+
+You are kind and I am nothing.  Born to serve and work the land.
+
+And yet... I am from a noble high born race.  A race that once ruled the whale roads in Geatland, but we are no more...
+
+&lt;&lt;if $tattoo is false&gt;&gt;Have you seen my [[tattoo]]?
+&lt;&lt;/if&gt;&gt;
+
+[[next]]
+
+
+</tw-passagedata><tw-passagedata pid="4" name="ignore me" tags="" position="1181,767" size="100,100">&lt;&lt;if $ignore is 0&gt;&gt;Please be kind!  Don&#39;t walk away - I have a story about a hero, a story about a dragon, a story about war and death, many stories!.
+&lt;&lt;elseif $ignore is 1&gt;&gt;Please I&#39;m an old man and have lost all that I have loved. I can only give you stories. No one will look after me now.
+&lt;&lt;elseif $ignore is 2&gt;&gt;I&#39;m just asking for some Christian charity - you can see I have nothing.  Please! You will like my story.
+&lt;&lt;else&gt;&gt;May the Gods strike you down you mean whoreson.  
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $ignore &lt; 3&gt;&gt; Please don&#39;t [[ignore me]]!  &lt;&lt;if $goblet is false&gt;&gt;[[Will you give me something?]] &lt;&lt;else&gt;&gt; Just [[A morsel?]]&lt;&lt;/if&gt;&gt; 
+&lt;&lt;else&gt;&gt; [[I spit on your soul and your foul offspring too]]
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;set $ignore to $ignore+1&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="I spit on your soul and your foul offspring too" tags="" position="1536,1199" size="100,100">&lt;img src=&quot;images/evileye.jpg&quot; alt=&quot;A close up photo of an evil eye&quot;&gt;
+&lt;&lt;audio spitonyou play&gt;&gt;
+
+[[credits]]
+
+</tw-passagedata><tw-passagedata pid="6" name="next" tags="" position="665,607" size="100,100">My story starts in Geatland when I was a young man...
+
+&lt;&lt;timed 2s&gt;&gt;
+I worked the cattle in the Spring and Summer.
+&lt;&lt;next&gt;&gt;I felled trees in the Autumn.
+&lt;&lt;next&gt;&gt;I built boats for my Master in the Winter.
+&lt;&lt;next&gt;&gt;I was often sent to row boats for the Geats as vassalage by my Master to King Hgyleac, then X and then Y.
+&lt;&lt;next&gt;&gt;I helped birth the cattle in Spring and shared their bed year round.
+
+&lt;&lt;next&gt;&gt;I did not know any other life.  I was born into this.
+&lt;&lt;timed&gt;&gt;
+
+Would you like to know more about [[my family]] ? 
+
+No. [[The day it changed]] </tw-passagedata><tw-passagedata pid="7" name="credits" tags="" position="1609,2440" size="100,100">Credits
+
+Stock images
+Flickr: Dennis Skley, &quot;Evil Eye&quot;, https://flic.kr/p/eavRJN
+Deviant Art:Pedro Lopez, &quot;Sleeping_Dragon&quot;,  http://img06.deviantart.net/e7f0/i/2014/322/2/2/sleeping_dragon_by_oission-d86ve3j.jpg; https://www.facebook.com/pedro.capricorn.android
+
+Audio
+Sound effects obtained from https://www.zapsplat.com</tw-passagedata><tw-passagedata pid="8" name="my family" tags="" position="456,685" size="100,100">My mother told tales of how we were once rulers of this land. We were a noble race that bent the Franks, Swedes, and Friesens to our desires.  We were offered gold from mines to the West, gemstones from the South, precious pearls from the East and hardened iron from the North.  
+
+Our race withered as new tribes with new Gods and new ways came to our land. Our treasures lost to time.
+
+We had accepted our fate.
+
+&lt;&lt;if $tattoo is false&gt;&gt; You should see my [[tattoo]]&lt;&lt;/if&gt;&gt;
+
+[[The day it changed]]</tw-passagedata><tw-passagedata pid="9" name="The day it changed" tags="" position="672,764" size="100,100">I was sent to the forest with my brother.
+
+We went to fell trees and chop logs in the forest.
+
+My Master had freemen work with us. Most were good. But one was not.
+
+He liked to show off by throwing his axe at the trees close to where we worked. 
+
+His axe almost hit me when I picked up the logs.
+
+[[I told him to stop]]
+
+
+
+
+</tw-passagedata><tw-passagedata pid="10" name="I ran" tags="" position="678,1059" size="100,100">I ran hard.
+
+&lt;&lt;timed 3s&gt;&gt; I heard the men screaming after me.
+&lt;&lt;audio dogs play&gt;&gt;
+							And then I heard the dogs released.
+							
+&lt;&lt;next&gt;&gt; I kept running...
+&lt;&lt;next 1s&gt;&gt;          left
+&lt;&lt;next&gt;&gt;                                           right
+&lt;&lt;next&gt;&gt;left                     
+&lt;&lt;next&gt;&gt;		                              right
+&lt;&lt;audio dogs fadeout&gt;&gt;
+&lt;&lt;audio river play&gt;&gt;
+&lt;&lt;next 2s&gt;&gt;                A river...
+&lt;&lt;next&gt;&gt; 
+						but 
+							it was 
+								too deep.
+&lt;&lt;next&gt;&gt;
+&lt;&lt;audio river fadeout&gt;&gt;
+     went        hills
+		   
+  I       up            and 																	       							again.	
+		  					down                        up  
+								  into             and 
+									  
+								  		a  valley 
+&lt;&lt;next&gt;&gt;
+			So tired. 
+
+&lt;&lt;next&gt;&gt;          A place to hide...
+image here
+
+&lt;&lt;next&gt;&gt; 						[[I scrambled into it]]
+
+&lt;&lt;/timed&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="11" name="I scrambled into it" tags="" position="678,1209" size="100,100">I slid down into a deep crevice between two rocks.
+
+My ankle hurt.
+
+I caught my breath.
+
+All I could hear was my breathing.
+
+Audio build on breathing.
+
+My breathing was [[loud]]
+
+</tw-passagedata><tw-passagedata pid="12" name="I told him to stop" tags="" position="672,912" size="100,100">&lt;span id=&quot;reax&quot;&gt;He Laughed.&lt;/span&gt;\
+
+&lt;&lt;timed 2s&gt;&gt;&lt;&lt;replace &quot;#reax&quot;&gt;&gt;He spat at us.&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;&lt;&lt;replace &quot;#reax&quot;&gt;&gt;He threw his ax at my feet.  
+
+I flinched and nearly dropped the logs I was holding.
+
+He laughed even harder.&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;&lt;&lt;replace &quot;#reax&quot;&gt;&gt;He came for his ax. 
+
+As he bent down, I kicked him.&lt;&lt;/replace&gt;&gt;
+
+&lt;&lt;next&gt;&gt;&lt;&lt;replace &quot;#reax&quot;&gt;&gt;He took his ax and swung it at me.
+
+I dropped the logs in terror.&lt;&lt;/replace&gt;&gt;
+
+&lt;&lt;next&gt;&gt;&lt;&lt;replace &quot;#reax&quot;&gt;&gt;He missed me with his swing but nearly hit my brother instead.
+
+I froze.  I screamed.&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+&lt;&lt;replace &quot;#reax&quot;&gt;&gt;I picked up one of the logs and hit him hard in the face.
+
+He screamed.  
+
+I screamed louder and hit him again.
+&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next 1s&gt;&gt;
+&lt;&lt;replace &quot;#reax&quot;&gt;&gt;Once, &lt;&lt;/replace&gt;&gt;
+&lt;&lt;next 1s&gt;&gt;twice, 
+&lt;&lt;next 1s&gt;&gt;three times.
+
+[[I ran]]
+
+&lt;&lt;/timed&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="13" name="loud" tags="" position="678,1359" size="100,100">I must be in a large hole. 
+&lt;&lt;timed 3s&gt;&gt;
+It is more than hole.  
+&lt;&lt;next 2s&gt;&gt;
+A cave.
+&lt;&lt;next&gt;&gt;
+As my eyes got used to the dark I realised it was more than a cave. 
+
+Should I [[go in]] or [[get out]]?
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="go in" tags="" position="472,1472" size="100,100">Large wood pillars and stones support the roof of the.. hall? Or is it a tomb?
+&gt;&gt;. . . . . . . Scattered... all. . . . about. . . the ground. . are. . . things . . .
+&lt;div align=&#39;center&#39; style=&#39;font-size: 150%&#39;&gt;
+And in the middle more...
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;timed 5s&gt;&gt;&lt;div style=&#39;font-size: 200%; color:green&#39;&gt;&lt;span id=&quot;Inout&quot;&gt;There is a &lt;strong&gt;MOUND&lt;/strong&gt; on the top&lt;/span&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;&lt;div style=&#39;color:green&#39;&gt;It moves..&lt;/div&gt;
+&lt;&lt;next 2s&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+ 	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;	
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;I still hear breathing but it is not mine.&lt;br&gt;
+&lt;&lt;next&gt;&gt;It is the [[MOUND]].
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;div align=&#39;center&#39; style=&#39;color:yellow&#39;&gt;
+                           There are plates, 
+			             cups, torqs, helmets, 
+			      shields, and swords heaped into a pile.
+&lt;/div&gt; 
+</tw-passagedata><tw-passagedata pid="15" name="MOUND" tags="dragon" position="468,1592" size="100,100">It was a large wyrm.
+
+&lt;&lt;timed 2s&gt;&gt;A wyrm with claws.
+
+&lt;&lt;next&gt;&gt;A wyrm with talons.
+
+&lt;&lt;next&gt;&gt;A wyrm with wings.
+
+&lt;&lt;next&gt;&gt;It was a dragon. 
+
+&lt;&lt;next&gt;&gt;I was going to scream but clapped my hands over my mouth.
+
+&lt;&lt;next&gt;&gt;It stirred. 
+
+&lt;&lt;next&gt;&gt;I [[froze]].
+
+&lt;&lt;/timed&gt;&gt;
+
+&lt;img src=&quot;images/sleepingdragon.jpg&quot; alt=&quot;Sleeping Dragon&quot;&gt;
+</tw-passagedata><tw-passagedata pid="16" name="froze" tags="" position="655,1637" size="100,100">I sit there for what seems like an hour waiting...
+&lt;&lt;nobr&gt;&gt;&lt;&lt;set $goblet is true&gt;&gt;
+&lt;&lt;timed 2s&gt;&gt;&lt;div style=&#39;font-size: 200%; color:blue&#39;&gt;&lt;span id=&quot;Inout&quot;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt; &lt;div style=&#39;color:white&#39;&gt;	
+	It is sleeping... &lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt; &lt;div style=&#39;color:white&#39;&gt;	
+It is sleeping on a pile of &lt;div align=&#39;center&#39; style=&#39;font-size: 150%; color:gold&#39;&gt;&lt;strong&gt; GOLD &lt;/strong&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt; 	
+&lt;div align=&#39;center&#39; style=&#39;font-size: 150%&#39;&gt;A PILE OF FREEDOM!&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt; &lt;div style=&#39;color:white&#39;&gt;	
+....I slide down further and reach ...the edge of the pile.&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt; 
+&lt;div align=&#39;center&#39;&gt;I feel around and find a handle.&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+&lt;div align=&#39;center&#39;&gt;I pull.&lt;/div&gt;
+&lt;&lt;next 1s&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact; font-size: 200%; color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact;font-size: 300%; color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;&lt;div align=&#39;right&#39;&gt;&lt;strong&gt;I FREEZE.&lt;/strong&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact;font-size: 300%;  color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact;font-size: 300%; color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact;font-size: 300%;  color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family:Impact;font-size: 300%; color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;&lt;div align=&#39;right&#39;&gt;
+I lift my hand and see I have a goblet. Studded with stones.
+Decorated with something familiar?...&lt;br&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+&lt;div align=&#39;center&#39;&gt;I have to get out!&lt;/div&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;I shuffle slowly, carefully back up the crevice.
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;font-family: Impact;font-size: 300%;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;I [[get out]] 
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="17" name="get out" tags="" position="861,1570" size="100,100">I scramble back up out of the hole.
+
+What am I to do now?
+
+I am still damp from the water. 
+
+&lt;&lt;if $goblet is true&gt;&gt;
+I look at the cup in the fading light.  It is GOLD! 
+It is studded with red garnets. 
+The handle is shaped with into a hart.
+The decoration is familiar
+/*image of olah*/
+&lt;&lt;/if&gt;&gt;
+
+Where can I go now? I am not a freeman. My [[tattoo]] marks me as a thrall.
+No one near here will take me. They know my mark.
+
+&lt;&lt;if $goblet is false&gt;&gt;
+I look at the hole I just got out of. Should I [[go in]]? or return to my [[Master]] and beg forgiveness?
+&lt;&lt;else&gt;&gt;
+Perhaps I can use this goblet to pay for my freedom?  
+If I run to the coast, perhaps I can sell it, get my own boat and work for myself faraway on the whale-road?
+Or I can use the cup to pay the wergild for X? 
+Do I return and beg forgiveness from my [[Master]] or [[try my luck]] at the coast?
+&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="18" name="Master" tags="" position="729,1802" size="100,100">I kneel in front of my master Harald.
+
+&lt;&lt;if $port is true&gt;&gt;The goblet I found is given to him.
+&lt;&lt;elseif $goblet is true&gt;&gt;.I thrust the goblet out for him.
+&lt;&lt;/if&gt;&gt;
+
+I ask for forgiveness.  
+&lt;&lt;if $goblet is true&gt;&gt;
+&quot;Please look upon this treasure as wergild for my actions and take me back!&quot;
+
+Harald looks at the goblet with eager eyes. 
+&quot;Is there more where this came from?&quot;
+&lt;&lt;/if&gt;&gt;
+
+Another thrall runs in - There is [[news of a monster]]!
+
+&lt;&lt;if $goblet is true&gt;&gt;My master asks me again.
+&quot;Is there more where this came from?&quot;
+I say [[yes]].
+&lt;&lt;else&gt;&gt; 
+&quot;You have cost me dearly. Þieluar will live but I cannot keep you anymore. The price for your actions must be recovered.  I would sell you to the next trader who passes through.
+However I have known you since you were born so instead I am exiling you&quot;
+[[leave]].
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="try my luck" tags="" position="1112,1643" size="100,100">I head out to the coast.
+
+It is another day&#39;s journey on foot.
+
+There is [[news of a monster]]!
+
+I start to run and get to a small village with a port.  
+
+&lt;&lt;set $port to true&gt;&gt;
+
+They see my [[tattoo]]. They know I am an escaped slave.
+
+I am beaten.  They take me and the goblet back to my [[Master]]. 
+
+</tw-passagedata><tw-passagedata pid="20" name="news of a monster" tags="" position="1204,1834" size="100,100">Terrible monster
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="yes" tags="" position="440,1946" size="100,100">I am forced to return with others.
+
+I slide down the crevice.  I am passed a small fire torch.
+
+I am again in the [[hall]].
+
+</tw-passagedata><tw-passagedata pid="22" name="leave" tags="" position="191,1655" size="100,100">I leave the village and return the way I came.
+
+I am hungry and tired.
+
+I want to sleep and be with my brother.
+
+My brother rushes up to me and gives me some bread.  He cannot give me more.
+
+I go to the only other place I know.
+
+I return to the crevice and bushes and the hole.
+
+I [[go in]] </tw-passagedata><tw-passagedata pid="23" name="hall" tags="" position="588,2036" size="100,100">The dragon is gone!
+
+There is a large gap in the far end of the hall.
+
+I scramble down.
+
+I fill it with plates and bracelets, torcs and small boxes, cups and swords.
+
+I pass the sack back up. 
+
+I scramble back up.
+
+As we get to the village, we feel a large hot gust of air pass over us.
+
+I run to my brother and the cattleshed.
+
+I [[sleep]].
+
+
+
+</tw-passagedata><tw-passagedata pid="24" name="sleep" tags="" position="726,2132" size="100,100">I am woken up.  The fields are on fire.
+
+The cattle are spooked.
+
+The wood is ablaze.
+
+I spend all the next days and nights working to keep the cattle safe.
+
+The [[news of a monster]] has spread to King Beowulf.
+
+&lt;&lt;timed 2s&gt;&gt;Beowulf who they say has the power of 30 men.  
+&lt;&lt;next&gt;&gt;Beowulf who slayed Grendel with his bare hands.
+&lt;&lt;next&gt;&gt;Beowulf who then killed and beheaded the mother of Grendel.
+&lt;&lt;next&gt;&gt;Beowulf who brought peace between the Geats and Danes.
+&lt;&lt;next&gt;&gt;Beowulf who gives gifts to all who are deserving.
+&lt;&lt;next&gt;&gt;
+Beowulf who will help us.
+&lt;&lt;next&gt;&gt;
+[[A band of warriors approach]].
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="A band of warriors approach" tags="" position="734,2265" size="100,100">I am plucked from the cattleshed and brought to Master Hallvard.
+
+At his door stand eleven large, armoured warriors.
+
+I walk inside.
+
+&lt;&lt;timed 2s&gt;&gt;Beside Hallvard is a mighty man.
+&lt;&lt;next&gt;&gt;with hands the size of ploughirons.
+&lt;&lt;next&gt;&gt;
+&lt;div style=&#39;font-size: 150%&#39;&gt;It is Beowulf.&lt;/div&gt;
+
+Quote from poem.
+&lt;&lt;next&gt;&gt;
+I must join him and bring him to the [[dragon&#39;s lair]].
+Poor old me... again!!!!
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="dragon&#39;s lair" tags="" position="731,2376" size="100,100">Here we are,.
+
+In he goes,
+
+I run, I hide.
+
+[[The dragon is slain]]
+</tw-passagedata><tw-passagedata pid="27" name="The dragon is slain" tags="" position="729,2514" size="100,100">Dragon
+Wigluf
+
+[[funeral]]
+</tw-passagedata><tw-passagedata pid="28" name="funeral" tags="" position="726,2643" size="100,100">Description of fyre, digging of mound.
+
+They bury Beowulf with the Dragon&#39;s treasure.
+
+I pluck a small piece of jewellry from the pile...
+ 
+The decoration on it feels the same as the one on the goblet...
+
+I finally see it in the light... 
+&lt;&lt;timed 5s&gt;&gt;
+image
+&lt;&lt;next&gt;&gt;
+A treasure of the noble highborn race. 
+&lt;&lt;next&gt;&gt;
+A treasure that like me is [[cursed]]. 
+&lt;&lt;next&gt;&gt;
+It throw it back into the pile.
+&lt;&lt;/timed&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="29" name="cursed" tags="" position="1146,2639" size="100,100">The land sours. 
+
+Wiglaf is not enough. Without Beowulf the land is too easy to raid.
+
+My master Hallvard is killed and the Franks take us.
+
+I am thrown onto a boat and made to row it.
+
+I row until I fall from exhaustion.  
+
+We go from Geatland to Dublin to Iceland and back.
+
+And now here I am... no use to anyone. I was lucky I was left for dead but still alive.
+
+I will probably die here if it were not for your kindness.
+
+Please could you give me another morsel... 
+
+&lt;&lt;timed 3s&gt;&gt;
+Please?
+&lt;&lt;next&gt;&gt;
+Please!!!
+&lt;&lt;next&gt;&gt;
+I can tell you the story of Beowulf...
+[[A morsel?]] or [[ignore me]]?
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="A morsel?" tags="" position="1325,2085" size="100,100">HWAET!
+
+[[credits]]
+</tw-passagedata><tw-passagedata pid="31" name="thrall" tags="" position="115,206" size="100,100">A thrall is a slave.
+
+I am a slave and I was born one.
+
+Here! I have a [[tattoo]].
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="tattoo" tags="" position="313,268" size="100,100">&lt;&lt;if $tattoo is false&gt;&gt; It is behind my neck.
+
+&lt;img src=&quot;images/feoh2.jpg&quot; alt=&quot;The symbol feoh on the back of a neck&quot;&gt;
+
+It means cattle.  I am owned and part of his wealth.
+
+I have another one.  You should [[see]] it.
+&lt;&lt;else&gt;&gt; You want to see my [[tattoo]] again? 
+&lt;&lt;set $tattoo is false&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;back&gt;&gt;
+</tw-passagedata><tw-passagedata pid="33" name="see" tags="" position="481,236" size="100,100">This one is smaller and my mother put it on me.
+&lt;img src=&quot;images/othala.jpg&quot; alt=&quot;The symbol othala on the wrist&quot;&gt;
+
+It means &quot;heritage&quot;. 
+
+My mother told me we came from a noble high race of people.
+
+&lt;&lt;set $tattoo is true&gt;&gt;
+&lt;&lt;back&gt;&gt;
+</tw-passagedata><tw-passagedata pid="34" name="StoryInit" tags="" position="52,20" size="100,100">
+&lt;&lt;cacheaudio &quot;spitonyou&quot; &quot;audio/human_hack_and_spit.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dogs&quot; &quot;audio/dogs.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;river&quot; &quot;audio/creek_forest.mp3&quot;&gt;&gt;
+&lt;&lt;set $ignore to 0&gt;&gt;
+&lt;&lt;set $toldhimtostop to 0&gt;&gt;
+&lt;&lt;set $ranhard to 0&gt;&gt;
+&lt;&lt;set $goblet is false&gt;&gt;
+&lt;&lt;set $port is false&gt;&gt;
+&lt;&lt;set $tattoo is false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="35" name="test" tags="" position="210,1309" size="100,100">&lt;div align=&#39;center&#39; style=&#39;font-size: 150%&#39;&gt;
+And in the middle more...
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;timed 5s&gt;&gt;&lt;div style=&#39;font-size: 200%; color:green&#39;&gt;&lt;span id=&quot;Inout&quot;&gt;There is a &lt;strong&gt;MOUND&lt;/strong&gt; on the top&lt;/span&gt;&lt;/div&gt;
+&lt;&lt;next&gt;&gt;&lt;div style=&#39;color:green&#39;&gt;It moves..&lt;/div&gt;
+&lt;&lt;next 2s&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+ 	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;	
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:blue&#39;&gt;&lt;strong&gt;IN&lt;/strong&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;
+	&lt;&lt;replace &quot;#Inout&quot;&gt;&gt;&lt;div style=&#39;color:red&#39;&gt;&lt;em&gt;OUT&lt;/em&gt;&lt;/div&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;next&gt;&gt;I still hear breathing but it is not mine.&lt;br&gt;
+&lt;&lt;next&gt;&gt;It is the .
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata></tw-storydata>
+
